@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GriimLab — Free FPV Design Files</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+
+    <div class="logo">
+        Griim<span>Lab</span>
+    </div>
+
+    <button class="search-btn">⌕</button>
+</header>
+
+
+<!-- SIDE MENU -->
+<div id="overlay" onclick="closeMenu()"></div>
+
+<aside id="sideMenu">
+
+    <button class="close-btn" onclick="closeMenu()">×</button>
+
+    <h3>FRAME FILES</h3>
+
+    <button onclick="filterFrames('all')">all frames</button>
+    <button onclick="filterFrames('65mm')">65mm</button>
+    <button onclick="filterFrames('72mm')">72mm</button>
+    <button onclick="filterFrames('2in')">2"</button>
+    <button onclick="filterFrames('2.5in')">2.5"</button>
+    <button onclick="filterFrames('3in')">3"</button>
+    <button onclick="filterFrames('3.5in')">3.5"</button>
+    <button onclick="filterFrames('4in')">4"</button>
+    <button onclick="filterFrames('5in')">5"</button>
+
+    <h3>3D PRINT FILES</h3>
+
+    <button>camera mounts</button>
+    <button>antenna mounts</button>
+    <button>accessories</button>
+
+    <h3>OTHER</h3>
+
+    <button>about</button>
+    <button>support</button>
+
+</aside>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <p class="small-text">welcome to griimlab</p>
+
+    <h1>
+        FREE FPV<br>
+        DESIGN FILES
+    </h1>
+
+    <p class="hero-text">
+        build it. print it. fly it.
+    </p>
+
+    <a href="#frames" class="main-btn">
+        explore files
+    </a>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="intro">
+
+    <p class="tag">FREE MEANS FREE.</p>
+
+    <h2>
+        fpv frames made for people
+        who like building things.
+    </h2>
+
+    <p>
+        all designs are available for free.
+        download the files, print them,
+        modify them, crash them, rebuild them.
+    </p>
+
+</section>
+
+
+<!-- FRAME FILES -->
+<section id="frames" class="section">
+
+    <div class="section-title">
+        <p>01 / FRAME FILES</p>
+
+        <h2>
+            choose your size.
+        </h2>
+    </div>
+
+
+    <div class="filter-bar">
+
+        <button onclick="filterFrames('all')">all</button>
+        <button onclick="filterFrames('65mm')">65mm</button>
+        <button onclick="filterFrames('72mm')">72mm</button>
+        <button onclick="filterFrames('2in')">2"</button>
+        <button onclick="filterFrames('2.5in')">2.5"</button>
+        <button onclick="filterFrames('3in')">3"</button>
+        <button onclick="filterFrames('3.5in')">3.5"</button>
+        <button onclick="filterFrames('4in')">4"</button>
+        <button onclick="filterFrames('5in')">5"</button>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <!-- 65MM -->
+        <article class="card frame-card" data-size="65mm">
+
+            <div class="image-box">
+                <span>65mm</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">micro frame</p>
+
+                <h3>Griim 65</h3>
+
+                <p>
+                    tiny frame for small whoop builds.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>65mm</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 72MM -->
+        <article class="card frame-card" data-size="72mm">
+
+            <div class="image-box">
+                <span>72mm</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">micro frame</p>
+
+                <h3>Griim 72</h3>
+
+                <p>
+                    compact frame for lightweight builds.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>72mm</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2 INCH -->
+        <article class="card frame-card" data-size="2in">
+
+            <div class="image-box">
+                <span>2"</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">micro fpv</p>
+
+                <h3>Griim 2</h3>
+
+                <p>
+                    small and lightweight 2" frame.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>2"</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2.5 INCH -->
+        <article class="card frame-card" data-size="2.5in">
+
+            <div class="image-box">
+                <span>2.5"</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">micro fpv</p>
+
+                <h3>Griim 2.5</h3>
+
+                <p>
+                    compact frame for fast little builds.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>2.5"</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 3 INCH -->
+        <article class="card frame-card" data-size="3in">
+
+            <div class="image-box">
+                <span>3"</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">fpv frame</p>
+
+                <h3>Griim 3</h3>
+
+                <p>
+                    lightweight 3" freestyle frame.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>3"</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 3.5 INCH -->
+        <article class="card frame-card" data-size="3.5in">
+
+            <div class="image-box">
+                <span>3.5"</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">fpv frame</p>
+
+                <h3>Griim 3.5</h3>
+
+                <p>
+                    versatile 3.5" frame for freestyle builds.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>3.5"</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 4 INCH -->
+        <article class="card frame-card" data-size="4in">
+
+            <div class="image-box">
+                <span>4"</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">fpv frame</p>
+
+                <h3>Griim 4</h3>
+
+                <p>
+                    efficient 4" frame for bigger builds.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>4"</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 5 INCH -->
+        <article class="card frame-card" data-size="5in">
+
+            <div class="image-box">
+                <span>5"</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">fpv frame</p>
+
+                <h3>Griim 5</h3>
+
+                <p>
+                    full-size 5" frame for freestyle and racing.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>5"</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- 3D PRINT FILES -->
+<section class="section print-section">
+
+    <div class="section-title">
+
+        <p>02 / 3D PRINT FILES</p>
+
+        <h2>
+            useful little things.
+        </h2>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <article class="card">
+
+            <div class="image-box">
+                <span>CAM</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">camera mount</p>
+
+                <h3>fpv camera mount</h3>
+
+                <p>
+                    simple printable camera mount.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>STL</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="image-box">
+                <span>ANT</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">antenna mount</p>
+
+                <h3>antenna holder</h3>
+
+                <p>
+                    lightweight antenna protection.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>STL</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="image-box">
+                <span>ETC</span>
+            </div>
+
+            <div class="card-content">
+
+                <p class="category">accessories</p>
+
+                <h3>random fpv stuff</h3>
+
+                <p>
+                    things you probably didn't know you needed.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>STL</strong>
+
+                    <a href="#" class="download">
+                        download
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- SUPPORT -->
+<section class="support">
+
+    <p class="tag">03 / SUPPORT</p>
+
+    <h2>
+        did this save you some money?
+    </h2>
+
+    <p>
+        if you somehow feel bad for the guy who spent
+        way too much time making free fpv frames
+        for random people on the internet...
+    </p>
+
+    <button onclick="openDonation()" class="main-btn">
+        maybe donate 🗿
+    </button>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="logo">
+        Griim<span>Lab</span>
+    </div>
+
+    <p>
+        free frame files, questionable decisions,
+        and absolutely no idea what i'm doing. 🗿
+    </p>
+
+    <small>
+        © 2026 GriimLab
+    </small>
+
+</footer>
+
+
+<!-- DONATION POPUP -->
+<div id="donationPopup">
+
+    <div class="popup-box">
+
+        <button class="popup-close" onclick="closeDonation()">
+            ×
+        </button>
+
+        <p class="tag">a tiny request</p>
+
+        <h2>
+            hi guys 😭
+        </h2>
+
+        <p>
+            all the files here are FREE.
+            i made all of this myself, and honestly...
+            i don't know why i decided to make all of this.
+        </p>
+
+        <p>
+            i could have spent my time doing something useful,
+            but here we are. 🗿
+        </p>
+
+        <p>
+            if you somehow feel bad for the guy who spent
+            way too much time making free fpv frames
+            for random people on the internet...
+            a small donation would be very appreciated. 😭
+        </p>
+
+        <p>
+            no pressure though.
+            if you don't donate, life goes on. probably.
+        </p>
+
+        <a href="#" class="main-btn">
+            support GriimLab
+        </a>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+                          </html>
